@@ -48,7 +48,7 @@ module.exports = (codepath, isAppend, cmdArgs, callback)->
   args = []
   args.push cmdArgs... if cmdArgs
 
-  args.push("--options=#{ctagsFile}", '--fields=+KSn', '--excmd=p')
+  args.push('--fields=+KSn', '--excmd=p')
   args.push('-u', '-R', '-f', genPath, codepath)
 
   stderr = (data)->
